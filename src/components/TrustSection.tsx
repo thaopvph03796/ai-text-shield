@@ -37,7 +37,7 @@ export const TrustSection = () => {
             Được tin tưởng bởi hàng nghìn người dùng
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            CheckAI là lựa chọn hàng đầu cho giáo viên, doanh nghiệp và content creator
+            AI Detector là lựa chọn hàng đầu cho giáo viên, doanh nghiệp và content creator
           </p>
         </div>
 
@@ -70,7 +70,7 @@ export const TrustSection = () => {
           <Card className="p-8 bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20">
             <div className="text-center">
               <h3 className="text-2xl font-bold text-foreground mb-4">
-                Cam kết của CheckAI
+                Cam kết của Vua Marketing
               </h3>
               <div className="grid md:grid-cols-3 gap-6 text-left">
                 <div>
