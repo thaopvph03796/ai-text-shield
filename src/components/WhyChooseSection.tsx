@@ -15,11 +15,11 @@ export const WhyChooseSection = () => {
           <div className="prose prose-lg max-w-none">
             <div className="bg-card p-8 rounded-2xl shadow-lg mb-8 border border-border">
               <p className="text-lg text-foreground leading-relaxed mb-6">
-                <strong className="text-primary">ai.vuamarketing.com</strong> là nền tảng công nghệ tiên tiến chuyên cung cấp dịch vụ <strong>kiểm tra đạo văn AI miễn phí</strong> và <strong>nhận diện nội dung do trí tuệ nhân tạo tạo ra</strong>. Trong bối cảnh các công cụ AI như ChatGPT, GPT-4, Claude, Gemini ngày càng phổ biến, việc phân biệt giữa nội dung do con người viết và nội dung được tạo bởi AI trở nên vô cùng quan trọng đối với giáo dục, xuất bản và các lĩnh vực chuyên môn.
+                <strong className="text-primary">AI Content Detector</strong> là công cụ <strong>kiểm tra đạo văn AI </strong> và <strong>nhận diện nội dung do trí tuệ nhân tạo tạo ra</strong>. Trong bối cảnh các công cụ AI như ChatGPT, GPT-4, Claude, Gemini ngày càng phổ biến, việc phân biệt giữa nội dung do con người viết và nội dung được tạo bởi AI trở nên vô cùng quan trọng đối với giáo dục, xuất bản và các lĩnh vực chuyên môn.
               </p>
 
               <p className="text-lg text-foreground leading-relaxed mb-6">
-                Được phát triển bởi đội ngũ chuyên gia công nghệ và xử lý ngôn ngữ tự nhiên, <strong>Vua Marketing</strong> tích hợp hơn <strong>8 công cụ AI detector hàng đầu thế giới</strong> bao gồm ZeroGPT, Undetectable.ai, Grammarly AI Detector, Crossplag, GPTZero, và nhiều hệ thống phát hiện AI khác. Sự kết hợp đa dạng này giúp đảm bảo <strong>độ chính xác lên đến 95%</strong> trong việc phát hiện nội dung AI, vượt trội so với việc sử dụng một công cụ đơn lẻ.
+                Được phát triển bởi Vua Marketing và hệ thống xử lý ngôn ngữ tự nhiên, <strong>Đặc biệt</strong> AI Detector tích hợp hơn <strong>8 công cụ AI Content detector hàng đầu thế giới</strong> bao gồm ZeroGPT, Undetectable.ai, Grammarly AI Detector, Crossplag, GPTZero, và nhiều hệ thống phát hiện AI khác. Sự kết hợp đa dạng này giúp đảm bảo <strong>độ chính xác lên đến 99%</strong> trong việc phát hiện nội dung AI, vượt trội so với việc sử dụng một công cụ đơn lẻ.
               </p>
             </div>
 
