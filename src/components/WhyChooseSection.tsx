@@ -1,63 +1,125 @@
 import { Card } from "@/components/ui/card";
-import { CheckCircle2, Zap, Shield, Heart } from "lucide-react";
-
-const reasons = [
-  {
-    icon: Heart,
-    title: "100% Miễn phí mãi mãi",
-    description: "Không phí ẩn, không yêu cầu thẻ tín dụng. CheckAI cam kết cung cấp dịch vụ kiểm tra AI detector miễn phí cho tất cả người dùng tại Việt Nam và toàn thế giới."
-  },
-  {
-    icon: Shield,
-    title: "Độ chính xác vượt trội",
-    description: "Tích hợp 8+ AI detectors hàng đầu thế giới như ZeroGPT, Undetectable.ai, Grammarly, Crossplag. Kết quả tổng hợp giúp phát hiện chính xác nội dung AI với tỷ lệ chính xác >95%."
-  },
-  {
-    icon: Zap,
-    title: "Nhanh như chớp",
-    description: "Phân tích văn bản trong 5 giây. Không cần đợi đợi, không cần đăng ký tài khoản phức tạp. Dán văn bản và nhận kết quả ngay lập tức."
-  },
-  {
-    icon: CheckCircle2,
-    title: "Hỗ trợ tiếng Việt",
-    description: "Một trong số ít công cụ AI detector hỗ trợ kiểm tra nội dung tiếng Việt. Ngoài ra còn hỗ trợ tiếng Anh, tiếng Trung, tiếng Nhật, tiếng Tây Ban Nha và tiếng Pháp."
-  }
-];
+import { CheckCircle2, Shield, Zap, Globe, Users, Target } from "lucide-react";
 
 export const WhyChooseSection = () => {
   return (
     <section className="py-20 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Tại sao chọn CheckAI?
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            CheckAI là công cụ kiểm tra đạo văn AI miễn phí tốt nhất với công nghệ tiên tiến và giao diện thân thiện
-          </p>
-        </div>
+        <article className="max-w-4xl mx-auto">
+          <header className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Giới thiệu về Checkdaovan - Công cụ kiểm tra đạo văn AI hàng đầu
+            </h2>
+          </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {reasons.map((reason, index) => (
-            <Card 
-              key={index} 
-              className="p-8 hover:shadow-xl transition-all duration-300 border-2 hover:border-primary/50"
-              style={{
-                animation: `fadeIn 0.5s ease-out ${index * 0.15}s both`
-              }}
-            >
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
-                <reason.icon className="w-7 h-7 text-primary" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-3">
-                {reason.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                {reason.description}
+          <div className="prose prose-lg max-w-none">
+            <div className="bg-card p-8 rounded-2xl shadow-lg mb-8 border border-border">
+              <p className="text-lg text-foreground leading-relaxed mb-6">
+                <strong className="text-primary">Checkdaovan.org</strong> là nền tảng công nghệ tiên tiến chuyên cung cấp dịch vụ <strong>kiểm tra đạo văn AI miễn phí</strong> và <strong>nhận diện nội dung do trí tuệ nhân tạo tạo ra</strong>. Trong bối cảnh các công cụ AI như ChatGPT, GPT-4, Claude, Gemini ngày càng phổ biến, việc phân biệt giữa nội dung do con người viết và nội dung được tạo bởi AI trở nên vô cùng quan trọng đối với giáo dục, xuất bản và các lĩnh vực chuyên môn.
               </p>
-            </Card>
-          ))}
-        </div>
+
+              <p className="text-lg text-foreground leading-relaxed mb-6">
+                Được phát triển bởi đội ngũ chuyên gia công nghệ và xử lý ngôn ngữ tự nhiên, <strong>Checkdaovan</strong> tích hợp hơn <strong>8 công cụ AI detector hàng đầu thế giới</strong> bao gồm ZeroGPT, Undetectable.ai, Grammarly AI Detector, Crossplag, GPTZero, và nhiều hệ thống phát hiện AI khác. Sự kết hợp đa dạng này giúp đảm bảo <strong>độ chính xác lên đến 95%</strong> trong việc phát hiện nội dung AI, vượt trội so với việc sử dụng một công cụ đơn lẻ.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <Card className="p-6 border-2 hover:border-primary/50 transition-all">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <CheckCircle2 className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-foreground mb-2">100% Miễn phí</h3>
+                    <p className="text-muted-foreground">
+                      Không giới hạn số lần kiểm tra, không yêu cầu đăng ký tài khoản hay thẻ tín dụng. Cam kết miễn phí vĩnh viễn cho mọi người dùng.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6 border-2 hover:border-primary/50 transition-all">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Zap className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-foreground mb-2">Tốc độ xử lý nhanh</h3>
+                    <p className="text-muted-foreground">
+                      Phân tích và trả về kết quả chỉ trong 5 giây, cho phép bạn kiểm tra hàng trăm văn bản mỗi ngày một cách hiệu quả.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6 border-2 hover:border-primary/50 transition-all">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Globe className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-foreground mb-2">Đa ngôn ngữ</h3>
+                    <p className="text-muted-foreground">
+                      Hỗ trợ kiểm tra tiếng Việt, tiếng Anh, tiếng Trung, tiếng Nhật, tiếng Tây Ban Nha và tiếng Pháp với độ chính xác cao.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6 border-2 hover:border-primary/50 transition-all">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Shield className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-foreground mb-2">Bảo mật tuyệt đối</h3>
+                    <p className="text-muted-foreground">
+                      Văn bản của bạn được xử lý an toàn, không lưu trữ hay chia sẻ với bên thứ ba, đảm bảo quyền riêng tư tuyệt đối.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            </div>
+
+            <div className="bg-card p-8 rounded-2xl shadow-lg border border-border">
+              <h3 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-3">
+                <Users className="w-7 h-7 text-primary" />
+                Ai nên sử dụng Checkdaovan?
+              </h3>
+              <div className="space-y-4 text-foreground">
+                <p className="leading-relaxed">
+                  <strong className="text-primary">Giáo viên và giảng viên:</strong> Kiểm tra bài tập, luận văn, bài kiểm tra của học sinh để đảm bảo tính trung thực học thuật và phát hiện gian lận sử dụng AI.
+                </p>
+                <p className="leading-relaxed">
+                  <strong className="text-primary">Nhà tuyển dụng và HR:</strong> Xác minh tính xác thực của CV, thư xin việc, bài test tuyển dụng để tìm được ứng viên thực sự có năng lực.
+                </p>
+                <p className="leading-relaxed">
+                  <strong className="text-primary">Nhà xuất bản và biên tập viên:</strong> Đảm bảo nội dung bài viết, sách, tạp chí được viết bởi con người, giữ gìn chất lượng và tính độc đáo của tác phẩm.
+                </p>
+                <p className="leading-relaxed">
+                  <strong className="text-primary">Học sinh và sinh viên:</strong> Tự kiểm tra bài viết của mình trước khi nộp, đảm bảo không bị nghi ngờ sử dụng AI một cách không đúng cách.
+                </p>
+                <p className="leading-relaxed">
+                  <strong className="text-primary">Content creators và SEO specialists:</strong> Kiểm tra nội dung trước khi xuất bản để tránh bị Google và các công cụ tìm kiếm phạt do sử dụng nội dung AI không chất lượng.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-8 bg-gradient-to-r from-primary/5 to-primary/10 p-8 rounded-2xl border border-primary/20">
+              <div className="flex items-start gap-4">
+                <Target className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-2xl font-bold text-foreground mb-3">
+                    Sứ mệnh của chúng tôi
+                  </h3>
+                  <p className="text-foreground leading-relaxed">
+                    Checkdaovan cam kết xây dựng một cộng đồng trung thực, minh bạch trong kỷ nguyên AI. Chúng tôi tin rằng công nghệ AI là công cụ hỗ trợ tuyệt vời, nhưng giá trị của sự sáng tạo và tư duy con người không thể thay thế. Sứ mệnh của chúng tôi là giúp mọi người sử dụng AI một cách có trách nhiệm, duy trì tính trung thực học thuật và bảo vệ chất lượng nội dung trong thời đại số.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
   );
