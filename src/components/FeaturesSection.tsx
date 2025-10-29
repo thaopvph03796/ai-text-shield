@@ -1,36 +1,36 @@
 import { Card } from "@/components/ui/card";
-import { Shield, Zap, Globe, TrendingUp, Lock, Users } from "lucide-react";
+import { Shield, Zap, Globe, TrendingUp, Lock, Users, CheckCircle } from "lucide-react";
 
 const features = [
   {
     icon: Shield,
-    title: "Độ chính xác cao",
-    description: "Sử dụng 8+ AI detectors hàng đầu để đảm bảo kết quả chính xác nhất"
+    title: "8+ AI Detectors tích hợp",
+    description: "Kết hợp ZeroGPT, Undetectable.ai, Grammarly, Crossplag, Sapling, SEO.ai và nhiều detector khác để đảm bảo độ chính xác cao nhất"
   },
   {
     icon: Zap,
-    title: "Kiểm tra nhanh chóng",
-    description: "Phân tích văn bản trong vài giây, tiết kiệm thời gian quý báu của bạn"
+    title: "Phân tích trong 5 giây",
+    description: "Công nghệ AI tiên tiến giúp kiểm tra văn bản cực nhanh. Dán nội dung và nhận kết quả ngay lập tức, tiết kiệm thời gian quý báu"
   },
   {
     icon: Globe,
-    title: "Hỗ trợ đa ngôn ngữ",
-    description: "Kiểm tra nội dung bằng tiếng Việt, tiếng Anh và nhiều ngôn ngữ khác"
+    title: "Hỗ trợ 6+ ngôn ngữ",
+    description: "Kiểm tra nội dung bằng tiếng Việt, tiếng Anh, tiếng Trung, tiếng Nhật, tiếng Tây Ban Nha và tiếng Pháp với độ chính xác cao"
   },
   {
     icon: TrendingUp,
-    title: "Báo cáo chi tiết",
-    description: "Nhận phân tích chi tiết từ nhiều nguồn detector uy tín"
+    title: "Báo cáo chi tiết trực quan",
+    description: "Nhận điểm số AI tổng hợp và phân tích từng detector riêng biệt. Dễ dàng hiểu và đưa ra quyết định chính xác"
   },
   {
     icon: Lock,
     title: "Bảo mật tuyệt đối",
-    description: "Nội dung của bạn được mã hóa và không được lưu trữ"
+    description: "Văn bản của bạn được xử lý an toàn với mã hóa SSL. Chúng tôi không lưu trữ hay chia sẻ nội dung của bạn"
   },
   {
-    icon: Users,
-    title: "Miễn phí sử dụng",
-    description: "Kiểm tra miễn phí với hạn mức hào phóng cho mọi người dùng"
+    icon: CheckCircle,
+    title: "Upload tài liệu trực tiếp",
+    description: "Hỗ trợ upload file Word, PDF và nhiều định dạng khác. Không cần copy-paste, chỉ cần kéo thả file vào"
   }
 ];
 
@@ -40,10 +40,10 @@ export const FeaturesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Tính năng nổi bật
+            Tính năng vượt trội của CheckAI
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            CheckAI cung cấp các công cụ mạnh mẽ để phát hiện nội dung AI với độ chính xác cao nhất
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Công cụ kiểm tra AI miễn phí với các tính năng chuyên nghiệp, được tin dùng bởi hàng nghìn người dùng
           </p>
         </div>
 
