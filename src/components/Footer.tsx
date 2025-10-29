@@ -35,23 +35,23 @@ export const Footer = () => {
             <h3 className="font-semibold text-foreground mb-4">Sản phẩm</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#detector" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   AI Detector
                 </a>
               </li>
               <li>
-                <a href="#bypass" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/ai-bypass" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   AI Bypass
                 </a>
               </li>
               <li>
-                <a href="#tools" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  AI Tools
+                <a href="/pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  Bảng giá
                 </a>
               </li>
               <li>
-                <a href="#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Bảng giá
+                <a href="/api-docs" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  API Documentation
                 </a>
               </li>
             </ul>
@@ -61,23 +61,18 @@ export const Footer = () => {
             <h3 className="font-semibold text-foreground mb-4">Hỗ trợ</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#guide" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/guide" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Hướng dẫn sử dụng
                 </a>
               </li>
               <li>
-                <a href="#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Câu hỏi thường gặp
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Liên hệ
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  API Documentation
                 </a>
               </li>
             </ul>
@@ -87,23 +82,18 @@ export const Footer = () => {
             <h3 className="font-semibold text-foreground mb-4">Pháp lý</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Điều khoản sử dụng
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Chính sách bảo mật
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/cookie-policy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Chính sách cookie
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  DMCA
                 </a>
               </li>
             </ul>

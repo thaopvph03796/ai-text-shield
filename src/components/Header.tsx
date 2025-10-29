@@ -13,9 +13,9 @@ export const Header = () => {
   const navLinks = [
     { name: "AI DETECTOR", href: "/" },
     { name: "AI BYPASS", href: "/ai-bypass" },
-    { name: "AI TOOLS", href: "#tools" },
-    { name: "BẢNG GIÁ", href: "#pricing" },
-    { name: "HƯỚNG DẪN", href: "#guide" },
+    { name: "BẢNG GIÁ", href: "/pricing" },
+    { name: "HƯỚNG DẪN", href: "/guide" },
+    { name: "FAQ", href: "/faq" },
   ];
 
   return (
