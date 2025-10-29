@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import AIDetector from "./pages/AIDetector";
 import AIBypass from "./pages/AIBypass";
 import Pricing from "./pages/Pricing";
 import Guide from "./pages/Guide";
@@ -25,6 +26,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/ai-detector" element={<AIDetector />} />
           <Route path="/ai-bypass" element={<AIBypass />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/guide" element={<Guide />} />
