@@ -8,7 +8,7 @@ export const WhyChooseSection = () => {
         <article className="max-w-4xl mx-auto">
           <header className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Giới thiệu về Vua Marketing - Công cụ kiểm tra đạo văn AI hàng đầu
+              Công cụ check đạo văn AI Miễn Phí
             </h2>
           </header>
 
