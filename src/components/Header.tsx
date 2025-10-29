@@ -24,9 +24,9 @@ export const Header = () => {
         <div className="flex items-center justify-between">
           <a href="/" className="flex items-center gap-2">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">AI</span>
+              <span className="text-primary-foreground font-bold text-sm">CD</span>
             </div>
-            <span className="text-xl font-bold text-foreground">CheckAI</span>
+            <span className="text-xl font-bold text-foreground">Checkdaovan</span>
           </a>
           
           <nav className="hidden md:flex items-center gap-6">
