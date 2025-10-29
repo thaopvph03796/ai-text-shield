@@ -2,15 +2,39 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
-import { Upload, FileText, Copy } from "lucide-react";
+import { Upload, FileText, Copy, Globe } from "lucide-react";
 import { toast } from "sonner";
 import { ScoreDisplay } from "./ScoreDisplay";
 import { DetectorResults } from "./DetectorResults";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
-const EXAMPLE_TEXT = `Trí tuệ nhân tạo (AI) đang thay đổi cách chúng ta làm việc và sống. Công nghệ này có khả năng xử lý dữ liệu lớn, nhận dạng mẫu và đưa ra quyết định thông minh. AI được ứng dụng rộng rãi trong nhiều lĩnh vực như y tế, giáo dục, kinh doanh và giải trí. Tuy nhiên, việc sử dụng AI cũng đặt ra nhiều câu hỏi về đạo đức và tác động xã hội.`;
+const EXAMPLE_TEXTS = {
+  vi: `Trí tuệ nhân tạo (AI) đang thay đổi cách chúng ta làm việc và sống. Công nghệ này có khả năng xử lý dữ liệu lớn, nhận dạng mẫu và đưa ra quyết định thông minh. AI được ứng dụng rộng rãi trong nhiều lĩnh vực như y tế, giáo dục, kinh doanh và giải trí. Tuy nhiên, việc sử dụng AI cũng đặt ra nhiều câu hỏi về đạo đức và tác động xã hội.`,
+  en: `Artificial Intelligence (AI) is transforming the way we work and live. This technology has the ability to process large amounts of data, recognize patterns, and make intelligent decisions. AI is widely applied in various fields such as healthcare, education, business, and entertainment. However, the use of AI also raises many questions about ethics and social impact.`,
+  zh: `人工智能（AI）正在改变我们的工作和生活方式。这项技术能够处理大量数据，识别模式，并做出智能决策。人工智能广泛应用于医疗、教育、商业和娱乐等多个领域。然而，人工智能的使用也引发了许多关于道德和社会影响的问题。`,
+  ja: `人工知能（AI）は、私たちの働き方や生活を変えています。この技術は、大量のデータを処理し、パターンを認識し、知的な決定を下す能力を持っています。AIは、医療、教育、ビジネス、エンターテインメントなど、さまざまな分野で広く応用されています。しかし、AIの使用は倫理と社会的影響に関する多くの質問も提起しています。`,
+  es: `La Inteligencia Artificial (IA) está transformando la forma en que trabajamos y vivimos. Esta tecnología tiene la capacidad de procesar grandes cantidades de datos, reconocer patrones y tomar decisiones inteligentes. La IA se aplica ampliamente en diversos campos como la salud, la educación, los negocios y el entretenimiento. Sin embargo, el uso de la IA también plantea muchas preguntas sobre la ética y el impacto social.`,
+  fr: `L'Intelligence Artificielle (IA) transforme notre façon de travailler et de vivre. Cette technologie a la capacité de traiter de grandes quantités de données, de reconnaître des modèles et de prendre des décisions intelligentes. L'IA est largement appliquée dans divers domaines tels que la santé, l'éducation, les affaires et le divertissement. Cependant, l'utilisation de l'IA soulève également de nombreuses questions sur l'éthique et l'impact social.`,
+};
+
+const LANGUAGES = [
+  { code: "vi", name: "Tiếng Việt", flag: "🇻🇳" },
+  { code: "en", name: "English", flag: "🇺🇸" },
+  { code: "zh", name: "中文", flag: "🇨🇳" },
+  { code: "ja", name: "日本語", flag: "🇯🇵" },
+  { code: "es", name: "Español", flag: "🇪🇸" },
+  { code: "fr", name: "Français", flag: "🇫🇷" },
+];
 
 export const PlagiarismChecker = () => {
   const [text, setText] = useState("");
+  const [language, setLanguage] = useState("vi");
   const [isChecking, setIsChecking] = useState(false);
   const [aiScore, setAiScore] = useState<number | null>(null);
   const [detectorScores, setDetectorScores] = useState<Array<{name: string, score: number, icon: string}>>([]);
@@ -68,10 +92,17 @@ export const PlagiarismChecker = () => {
   };
 
   const handleTryExample = () => {
-    setText(EXAMPLE_TEXT);
+    const exampleText = EXAMPLE_TEXTS[language as keyof typeof EXAMPLE_TEXTS] || EXAMPLE_TEXTS.vi;
+    setText(exampleText);
     setAiScore(null);
     setDetectorScores([]);
     toast.info("Đã tải văn bản mẫu");
+  };
+
+  const handleLanguageChange = (value: string) => {
+    setLanguage(value);
+    const selectedLang = LANGUAGES.find(lang => lang.code === value);
+    toast.success(`Đã chuyển sang ${selectedLang?.name}`);
   };
 
   const handleUpload = () => {
@@ -104,10 +135,28 @@ export const PlagiarismChecker = () => {
         <div className="grid lg:grid-cols-3 gap-6">
           <Card className="lg:col-span-2 p-6">
             <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">
-                  số từ: {wordCount} / 5000
-                </span>
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div className="flex items-center gap-4">
+                  <Select value={language} onValueChange={handleLanguageChange}>
+                    <SelectTrigger className="w-[200px]">
+                      <Globe className="w-4 h-4 mr-2" />
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {LANGUAGES.map((lang) => (
+                        <SelectItem key={lang.code} value={lang.code}>
+                          <span className="flex items-center gap-2">
+                            <span>{lang.flag}</span>
+                            <span>{lang.name}</span>
+                          </span>
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  <span className="text-sm text-muted-foreground">
+                    {wordCount} / 5000 từ
+                  </span>
+                </div>
                 <span className="text-sm text-muted-foreground">
                   Còn lại 5000 từ
                 </span>
