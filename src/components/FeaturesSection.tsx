@@ -40,10 +40,10 @@ export const FeaturesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Tính năng vượt trội của CheckAI
+            Tính năng chính
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Công cụ kiểm tra AI miễn phí với các tính năng chuyên nghiệp, được tin dùng bởi hàng nghìn người dùng
+            Công cụ kiểm tra đạo văn AI miễn phí với các tính năng chuyên nghiệp, được tin dùng bởi hàng nghìn người dùng
           </p>
         </div>
 

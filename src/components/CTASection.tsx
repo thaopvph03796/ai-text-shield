@@ -10,7 +10,7 @@ export const CTASection = () => {
             Sẵn sàng kiểm tra nội dung của bạn?
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Bắt đầu sử dụng CheckAI miễn phí ngay hôm nay. Không cần đăng ký, không cần thẻ tín dụng.
+            Bắt đầu sử dụng AI Detector miễn phí ngay hôm nay. Không cần đăng ký, không cần thẻ tín dụng.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-base" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
