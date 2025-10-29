@@ -8,9 +8,9 @@ export const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">CD</span>
+                <span className="text-primary-foreground font-bold text-sm">VM</span>
               </div>
-              <span className="text-xl font-bold text-foreground">Checkdaovan</span>
+              <span className="text-xl font-bold text-foreground">Vua Marketing</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Công cụ kiểm tra đạo văn AI hàng đầu. Phát hiện nội dung được tạo bởi AI với độ chính xác cao.
@@ -102,7 +102,7 @@ export const Footer = () => {
 
         <div className="border-t mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground text-center sm:text-left">
-            © 2024 Checkdaovan. Tất cả quyền được bảo lưu.
+            © 2024 Vua Marketing. Tất cả quyền được bảo lưu.
           </p>
           <p className="text-sm text-muted-foreground text-center sm:text-right">
             Made with ❤️ in Vietnam

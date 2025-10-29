@@ -8,18 +8,18 @@ export const WhyChooseSection = () => {
         <article className="max-w-4xl mx-auto">
           <header className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Giới thiệu về Checkdaovan - Công cụ kiểm tra đạo văn AI hàng đầu
+              Giới thiệu về Vua Marketing - Công cụ kiểm tra đạo văn AI hàng đầu
             </h2>
           </header>
 
           <div className="prose prose-lg max-w-none">
             <div className="bg-card p-8 rounded-2xl shadow-lg mb-8 border border-border">
               <p className="text-lg text-foreground leading-relaxed mb-6">
-                <strong className="text-primary">Checkdaovan.org</strong> là nền tảng công nghệ tiên tiến chuyên cung cấp dịch vụ <strong>kiểm tra đạo văn AI miễn phí</strong> và <strong>nhận diện nội dung do trí tuệ nhân tạo tạo ra</strong>. Trong bối cảnh các công cụ AI như ChatGPT, GPT-4, Claude, Gemini ngày càng phổ biến, việc phân biệt giữa nội dung do con người viết và nội dung được tạo bởi AI trở nên vô cùng quan trọng đối với giáo dục, xuất bản và các lĩnh vực chuyên môn.
+                <strong className="text-primary">ai.vuamarketing.com</strong> là nền tảng công nghệ tiên tiến chuyên cung cấp dịch vụ <strong>kiểm tra đạo văn AI miễn phí</strong> và <strong>nhận diện nội dung do trí tuệ nhân tạo tạo ra</strong>. Trong bối cảnh các công cụ AI như ChatGPT, GPT-4, Claude, Gemini ngày càng phổ biến, việc phân biệt giữa nội dung do con người viết và nội dung được tạo bởi AI trở nên vô cùng quan trọng đối với giáo dục, xuất bản và các lĩnh vực chuyên môn.
               </p>
 
               <p className="text-lg text-foreground leading-relaxed mb-6">
-                Được phát triển bởi đội ngũ chuyên gia công nghệ và xử lý ngôn ngữ tự nhiên, <strong>Checkdaovan</strong> tích hợp hơn <strong>8 công cụ AI detector hàng đầu thế giới</strong> bao gồm ZeroGPT, Undetectable.ai, Grammarly AI Detector, Crossplag, GPTZero, và nhiều hệ thống phát hiện AI khác. Sự kết hợp đa dạng này giúp đảm bảo <strong>độ chính xác lên đến 95%</strong> trong việc phát hiện nội dung AI, vượt trội so với việc sử dụng một công cụ đơn lẻ.
+                Được phát triển bởi đội ngũ chuyên gia công nghệ và xử lý ngôn ngữ tự nhiên, <strong>Vua Marketing</strong> tích hợp hơn <strong>8 công cụ AI detector hàng đầu thế giới</strong> bao gồm ZeroGPT, Undetectable.ai, Grammarly AI Detector, Crossplag, GPTZero, và nhiều hệ thống phát hiện AI khác. Sự kết hợp đa dạng này giúp đảm bảo <strong>độ chính xác lên đến 95%</strong> trong việc phát hiện nội dung AI, vượt trội so với việc sử dụng một công cụ đơn lẻ.
               </p>
             </div>
 
@@ -89,7 +89,7 @@ export const WhyChooseSection = () => {
                     Sứ mệnh của chúng tôi
                   </h3>
                   <p className="text-foreground leading-relaxed">
-                    Checkdaovan cam kết xây dựng một cộng đồng trung thực, minh bạch trong kỷ nguyên AI. Chúng tôi tin rằng công nghệ AI là công cụ hỗ trợ tuyệt vời, nhưng giá trị của sự sáng tạo và tư duy con người không thể thay thế. Sứ mệnh của chúng tôi là giúp mọi người sử dụng AI một cách có trách nhiệm, duy trì tính trung thực học thuật và bảo vệ chất lượng nội dung trong thời đại số.
+                    Vua Marketing cam kết xây dựng một cộng đồng trung thực, minh bạch trong kỷ nguyên AI. Chúng tôi tin rằng công nghệ AI là công cụ hỗ trợ tuyệt vời, nhưng giá trị của sự sáng tạo và tư duy con người không thể thay thế. Sứ mệnh của chúng tôi là giúp mọi người sử dụng AI một cách có trách nhiệm, duy trì tính trung thực học thuật và bảo vệ chất lượng nội dung trong thời đại số.
                   </p>
                 </div>
               </div>
