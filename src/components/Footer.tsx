@@ -35,7 +35,7 @@ export const Footer = () => {
             <h3 className="font-semibold text-foreground mb-4">Sản phẩm</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a href="/ai-detector" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   AI Detector
                 </a>
               </li>

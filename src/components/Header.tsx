@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { useLocation } from "react-router-dom";
 import {
   Sheet,
   SheetContent,
@@ -9,9 +10,11 @@ import {
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const navLinks = [
-    { name: "AI DETECTOR", href: "/" },
+    { name: "TRANG CHỦ", href: "/" },
+    { name: "AI DETECTOR", href: "/ai-detector" },
     { name: "AI BYPASS", href: "/ai-bypass" },
     { name: "BẢNG GIÁ", href: "/pricing" },
     { name: "HƯỚNG DẪN", href: "/guide" },
@@ -34,7 +37,11 @@ export const Header = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                className={`text-sm font-medium transition-colors ${
+                  location.pathname === link.href
+                    ? "text-primary font-semibold"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
               >
                 {link.name}
               </a>
@@ -42,8 +49,6 @@ export const Header = () => {
           </nav>
           
           <div className="flex items-center gap-2">
-            <Button className="hidden sm:flex">Đăng nhập</Button>
-            
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild className="md:hidden">
                 <Button variant="outline" size="icon">
@@ -57,12 +62,15 @@ export const Header = () => {
                       key={link.name}
                       href={link.href}
                       onClick={() => setIsOpen(false)}
-                      className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
+                      className={`text-base font-medium transition-colors py-2 ${
+                        location.pathname === link.href
+                          ? "text-primary font-semibold"
+                          : "text-muted-foreground hover:text-foreground"
+                      }`}
                     >
                       {link.name}
                     </a>
                   ))}
-                  <Button className="mt-4 w-full">Đăng nhập</Button>
                 </nav>
               </SheetContent>
             </Sheet>
