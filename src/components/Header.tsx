@@ -11,8 +11,8 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "AI DETECTOR", href: "#detector" },
-    { name: "AI BYPASS", href: "#bypass" },
+    { name: "AI DETECTOR", href: "/" },
+    { name: "AI BYPASS", href: "/ai-bypass" },
     { name: "AI TOOLS", href: "#tools" },
     { name: "BẢNG GIÁ", href: "#pricing" },
     { name: "HƯỚNG DẪN", href: "#guide" },

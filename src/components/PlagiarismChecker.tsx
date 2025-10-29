@@ -13,6 +13,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs";
 
 const EXAMPLE_TEXTS = {
   vi: `Trí tuệ nhân tạo (AI) đang thay đổi cách chúng ta làm việc và sống. Công nghệ này có khả năng xử lý dữ liệu lớn, nhận dạng mẫu và đưa ra quyết định thông minh. AI được ứng dụng rộng rãi trong nhiều lĩnh vực như y tế, giáo dục, kinh doanh và giải trí. Tuy nhiên, việc sử dụng AI cũng đặt ra nhiều câu hỏi về đạo đức và tác động xã hội.`,
@@ -131,6 +137,17 @@ export const PlagiarismChecker = () => {
             trí tuệ nhân tạo (AI) hoặc sao chép từ các nguồn khác trên internet
           </p>
         </div>
+
+        <Tabs defaultValue="ai-detector" className="mb-6">
+          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2">
+            <TabsTrigger value="ai-detector">
+              AI Detector
+            </TabsTrigger>
+            <TabsTrigger value="bypass-ai" onClick={() => window.location.href = '/ai-bypass'}>
+              Bypass AI
+            </TabsTrigger>
+          </TabsList>
+        </Tabs>
 
         <div className="grid lg:grid-cols-3 gap-6">
           <Card className="lg:col-span-2 p-6">
