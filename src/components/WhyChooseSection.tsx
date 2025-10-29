@@ -81,30 +81,6 @@ export const WhyChooseSection = () => {
               </Card>
             </div>
 
-            <div className="bg-card p-8 rounded-2xl shadow-lg border border-border">
-              <h3 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-3">
-                <Users className="w-7 h-7 text-primary" />
-                Ai nên sử dụng Checkdaovan?
-              </h3>
-              <div className="space-y-4 text-foreground">
-                <p className="leading-relaxed">
-                  <strong className="text-primary">Giáo viên và giảng viên:</strong> Kiểm tra bài tập, luận văn, bài kiểm tra của học sinh để đảm bảo tính trung thực học thuật và phát hiện gian lận sử dụng AI.
-                </p>
-                <p className="leading-relaxed">
-                  <strong className="text-primary">Nhà tuyển dụng và HR:</strong> Xác minh tính xác thực của CV, thư xin việc, bài test tuyển dụng để tìm được ứng viên thực sự có năng lực.
-                </p>
-                <p className="leading-relaxed">
-                  <strong className="text-primary">Nhà xuất bản và biên tập viên:</strong> Đảm bảo nội dung bài viết, sách, tạp chí được viết bởi con người, giữ gìn chất lượng và tính độc đáo của tác phẩm.
-                </p>
-                <p className="leading-relaxed">
-                  <strong className="text-primary">Học sinh và sinh viên:</strong> Tự kiểm tra bài viết của mình trước khi nộp, đảm bảo không bị nghi ngờ sử dụng AI một cách không đúng cách.
-                </p>
-                <p className="leading-relaxed">
-                  <strong className="text-primary">Content creators và SEO specialists:</strong> Kiểm tra nội dung trước khi xuất bản để tránh bị Google và các công cụ tìm kiếm phạt do sử dụng nội dung AI không chất lượng.
-                </p>
-              </div>
-            </div>
-
             <div className="mt-8 bg-gradient-to-r from-primary/5 to-primary/10 p-8 rounded-2xl border border-primary/20">
               <div className="flex items-start gap-4">
                 <Target className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
