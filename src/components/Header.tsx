@@ -1,38 +1,72 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 export const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navLinks = [
+    { name: "AI DETECTOR", href: "#detector" },
+    { name: "AI BYPASS", href: "#bypass" },
+    { name: "AI TOOLS", href: "#tools" },
+    { name: "BẢNG GIÁ", href: "#pricing" },
+    { name: "HƯỚNG DẪN", href: "#guide" },
+  ];
+
   return (
-    <header className="border-b bg-card">
+    <header className="sticky top-0 z-50 border-b bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/60">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">AI</span>
-              </div>
-              <span className="text-xl font-bold text-foreground">CheckAI</span>
+          <a href="/" className="flex items-center gap-2">
+            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+              <span className="text-primary-foreground font-bold text-lg">AI</span>
             </div>
-          </div>
+            <span className="text-xl font-bold text-foreground">CheckAI</span>
+          </a>
           
           <nav className="hidden md:flex items-center gap-6">
-            <a href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              AI DETECTOR
-            </a>
-            <a href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              AI BYPASS
-            </a>
-            <a href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              AI TOOLS
-            </a>
-            <a href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              BẢNG GIÁ
-            </a>
-            <a href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              HƯỚNG DẪN
-            </a>
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              >
+                {link.name}
+              </a>
+            ))}
           </nav>
           
-          <Button>Đăng nhập</Button>
+          <div className="flex items-center gap-2">
+            <Button className="hidden sm:flex">Đăng nhập</Button>
+            
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+              <SheetTrigger asChild className="md:hidden">
+                <Button variant="outline" size="icon">
+                  <Menu className="h-5 w-5" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px]">
+                <nav className="flex flex-col gap-4 mt-8">
+                  {navLinks.map((link) => (
+                    <a
+                      key={link.name}
+                      href={link.href}
+                      onClick={() => setIsOpen(false)}
+                      className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
+                    >
+                      {link.name}
+                    </a>
+                  ))}
+                  <Button className="mt-4 w-full">Đăng nhập</Button>
+                </nav>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </header>
