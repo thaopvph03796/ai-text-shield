@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check, Zap } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { useEffect } from "react";
 
 const pricingPlans = [
   {
@@ -61,6 +62,10 @@ const pricingPlans = [
 ];
 
 const Pricing = () => {
+  useEffect(() => {
+    document.title = "Bảng giá | Vua Marketing";
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Header />

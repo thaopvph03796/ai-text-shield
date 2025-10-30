@@ -3,8 +3,13 @@ import { Footer } from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Code } from "lucide-react";
+import { useEffect } from "react";
 
 const ApiDocs = () => {
+  useEffect(() => {
+    document.title = "API Documentation | Vua Marketing";
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Header />

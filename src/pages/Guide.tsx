@@ -2,8 +2,13 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { FileText, Upload, Wand2, CheckCircle } from "lucide-react";
+import { useEffect } from "react";
 
 const Guide = () => {
+  useEffect(() => {
+    document.title = "Hướng dẫn sử dụng | Vua Marketing";
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Header />

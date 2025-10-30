@@ -1,8 +1,13 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FAQSection } from "@/components/FAQSection";
+import { useEffect } from "react";
 
 const FAQ = () => {
+  useEffect(() => {
+    document.title = "Câu hỏi thường gặp | Vua Marketing";
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Header />

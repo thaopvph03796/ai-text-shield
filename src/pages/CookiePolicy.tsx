@@ -1,8 +1,13 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Card } from "@/components/ui/card";
+import { useEffect } from "react";
 
 const CookiePolicy = () => {
+  useEffect(() => {
+    document.title = "Chính sách Cookie | Vua Marketing";
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
