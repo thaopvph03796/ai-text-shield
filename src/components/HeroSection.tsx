@@ -11,23 +11,22 @@ export const HeroSection = () => {
   return (
     <section className="relative py-20 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 pointer-events-none" />
-      
+
       <div className="container mx-auto px-4 relative">
         <div className="max-w-4xl mx-auto text-center">
           <Badge className="mb-4 bg-primary/10 text-primary hover:bg-primary/20 border-primary/20">
             <Sparkles className="w-3 h-3 mr-1" />
-            100% Miễn phí - Không cần đăng ký
+            100% miễn phí trọn đời
           </Badge>
-          
+
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-            Công cụ kiểm tra đạo văn AI{" "}
-            <span className="text-primary">hàng đầu Việt Nam</span>
+            Công cụ kiểm tra đạo văn AI <span className="text-primary">miễn phí 100%</span>
           </h1>
-          
+
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Phát hiện nội dung được tạo bởi ChatGPT, GPT-4, Claude và các AI khác với độ chính xác cao. 
-            Sử dụng <strong className="text-foreground">8+ AI detectors</strong> hàng đầu thế giới, 
-            hỗ trợ <strong className="text-foreground">tiếng Việt</strong> và nhiều ngôn ngữ.
+            Phát hiện nội dung được tạo bởi ChatGPT, GPT-4, Claude và các AI khác với độ chính xác cao. Sử dụng{" "}
+            <strong className="text-foreground">8+ AI detectors</strong> hàng đầu thế giới, hỗ trợ{" "}
+            <strong className="text-foreground">tiếng Việt</strong> và nhiều ngôn ngữ.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
