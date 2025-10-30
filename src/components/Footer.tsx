@@ -8,7 +8,7 @@ export const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">VM</span>
+                <span className="text-primary-foreground font-bold text-sm">AI.</span>
               </div>
               <span className="text-xl font-bold text-foreground">Vua Marketing</span>
             </div>
@@ -16,16 +16,28 @@ export const Footer = () => {
               Công cụ kiểm tra đạo văn AI hàng đầu. Phát hiện nội dung được tạo bởi AI với độ chính xác cao.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="w-9 h-9 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center">
+              <a
+                href="#"
+                className="w-9 h-9 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center"
+              >
                 <Facebook className="w-4 h-4" />
               </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center">
+              <a
+                href="#"
+                className="w-9 h-9 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center"
+              >
                 <Twitter className="w-4 h-4" />
               </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center">
+              <a
+                href="#"
+                className="w-9 h-9 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center"
+              >
                 <Linkedin className="w-4 h-4" />
               </a>
-              <a href="#" className="w-9 h-9 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center">
+              <a
+                href="#"
+                className="w-9 h-9 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors flex items-center justify-center"
+              >
                 <Mail className="w-4 h-4" />
               </a>
             </div>
@@ -35,7 +47,10 @@ export const Footer = () => {
             <h3 className="font-semibold text-foreground mb-4">Sản phẩm</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/ai-detector" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a
+                  href="/ai-detector"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   AI Detector
                 </a>
               </li>
@@ -92,7 +107,10 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/cookie-policy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a
+                  href="/cookie-policy"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Chính sách cookie
                 </a>
               </li>
@@ -104,9 +122,7 @@ export const Footer = () => {
           <p className="text-sm text-muted-foreground text-center sm:text-left">
             © 2024 Vua Marketing. Tất cả quyền được bảo lưu.
           </p>
-          <p className="text-sm text-muted-foreground text-center sm:text-right">
-            Made with ❤️ in Vietnam
-          </p>
+          <p className="text-sm text-muted-foreground text-center sm:text-right">Made with ❤️ in Vietnam</p>
         </div>
       </div>
     </footer>
