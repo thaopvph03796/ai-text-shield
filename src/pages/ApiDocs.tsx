@@ -8,6 +8,10 @@ import { useEffect } from "react";
 const ApiDocs = () => {
   useEffect(() => {
     document.title = "API Documentation | Vua Marketing";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Tài liệu API của Vua Marketing. Tích hợp kiểm tra đạo văn AI và nhân hóa nội dung vào ứng dụng của bạn. RESTful API đơn giản, dễ sử dụng.");
+    }
   }, []);
 
   return (

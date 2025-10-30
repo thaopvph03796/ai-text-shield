@@ -64,6 +64,10 @@ const pricingPlans = [
 const Pricing = () => {
   useEffect(() => {
     document.title = "Bảng giá | Vua Marketing";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Xem bảng giá các gói dịch vụ của Vua Marketing. Gói miễn phí và premium với tính năng kiểm tra AI, nhân hóa nội dung không giới hạn. Giá cả cạnh tranh.");
+    }
   }, []);
 
   return (

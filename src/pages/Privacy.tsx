@@ -6,6 +6,10 @@ import { useEffect } from "react";
 const Privacy = () => {
   useEffect(() => {
     document.title = "Chính sách bảo mật | Vua Marketing";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Chính sách bảo mật của Vua Marketing. Cam kết bảo vệ thông tin cá nhân và dữ liệu của bạn khi sử dụng các công cụ AI miễn phí.");
+    }
   }, []);
 
   return (

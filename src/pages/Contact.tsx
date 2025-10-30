@@ -11,6 +11,10 @@ import { toast } from "sonner";
 const Contact = () => {
   useEffect(() => {
     document.title = "Liên hệ | Vua Marketing";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Liên hệ với Vua Marketing để được hỗ trợ. Email: support@vuamarketing.com, Telegram: @VuaMarketingAI. Chúng tôi luôn sẵn sàng giúp đỡ bạn.");
+    }
   }, []);
   const [formData, setFormData] = useState({
     name: "",

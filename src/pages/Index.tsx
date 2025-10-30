@@ -9,6 +9,10 @@ import { useEffect } from "react";
 const Index = () => {
   useEffect(() => {
     document.title = "Công cụ AI miễn phí | Vua Marketing";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Bộ công cụ AI miễn phí toàn diện từ Vua Marketing. Kiểm tra đạo văn AI, nhân hóa nội dung, và nhiều công cụ AI khác. Kết quả nhanh, chính xác 100%.");
+    }
   }, []);
 
   return (

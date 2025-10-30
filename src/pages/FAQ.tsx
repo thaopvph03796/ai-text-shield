@@ -6,6 +6,10 @@ import { useEffect } from "react";
 const FAQ = () => {
   useEffect(() => {
     document.title = "Câu hỏi thường gặp | Vua Marketing";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Câu trả lời cho các thắc mắc phổ biến về công cụ AI của Vua Marketing. Tìm hiểu về tính năng, độ chính xác, bảo mật và cách sử dụng.");
+    }
   }, []);
 
   return (

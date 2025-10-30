@@ -6,6 +6,10 @@ import { useEffect } from "react";
 const Terms = () => {
   useEffect(() => {
     document.title = "Điều khoản sử dụng | Vua Marketing";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Điều khoản và điều kiện sử dụng dịch vụ của Vua Marketing. Đọc kỹ trước khi sử dụng các công cụ AI miễn phí của chúng tôi.");
+    }
   }, []);
 
   return (

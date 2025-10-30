@@ -14,6 +14,10 @@ import { useEffect } from "react";
 const AIDetector = () => {
   useEffect(() => {
     document.title = "Công cụ kiểm tra đạo văn AI miễn phí | Vua Marketing";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Công cụ kiểm tra đạo văn AI miễn phí 100% tốt nhất. Phát hiện ChatGPT, GPT-4, Claude với 8+ AI detectors. Kết quả trong 5 giây, hỗ trợ tiếng Việt.");
+    }
   }, []);
 
   return (

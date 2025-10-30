@@ -7,6 +7,10 @@ import { useEffect } from "react";
 const Guide = () => {
   useEffect(() => {
     document.title = "Hướng dẫn sử dụng | Vua Marketing";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Hướng dẫn chi tiết cách sử dụng công cụ AI của Vua Marketing. Từ kiểm tra đạo văn AI đến nhân hóa nội dung, tất cả trong một nơi.");
+    }
   }, []);
 
   return (

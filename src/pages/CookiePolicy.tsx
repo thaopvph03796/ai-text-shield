@@ -6,6 +6,10 @@ import { useEffect } from "react";
 const CookiePolicy = () => {
   useEffect(() => {
     document.title = "Chính sách Cookie | Vua Marketing";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Chính sách Cookie của Vua Marketing. Tìm hiểu cách chúng tôi sử dụng cookie để cải thiện trải nghiệm người dùng trên website.");
+    }
   }, []);
 
   return (

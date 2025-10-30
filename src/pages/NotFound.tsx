@@ -6,6 +6,10 @@ const NotFound = () => {
 
   useEffect(() => {
     document.title = "404 - Không tìm thấy trang | Vua Marketing";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Trang bạn đang tìm kiếm không tồn tại. Quay lại trang chủ Vua Marketing để sử dụng các công cụ AI miễn phí.");
+    }
     console.error("404 Error: User attempted to access non-existent route:", location.pathname);
   }, [location.pathname]);
 
