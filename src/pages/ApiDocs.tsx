@@ -19,7 +19,7 @@ const ApiDocs = () => {
               API Documentation
             </h1>
             <p className="text-lg text-muted-foreground">
-              Tích hợp CheckAI vào ứng dụng của bạn với RESTful API
+              Tích hợp Vua Marketing vào ứng dụng của bạn với RESTful API
             </p>
           </div>
 
@@ -46,7 +46,7 @@ const ApiDocs = () => {
               <h3 className="text-lg font-semibold text-foreground mb-2">Endpoint</h3>
               <div className="bg-muted p-4 rounded-lg mb-4">
                 <code className="text-sm">
-                  POST https://api.checkai.com/v1/detect
+                  POST https://api.vuamarketing.com/v1/detect
                 </code>
               </div>
 
@@ -93,7 +93,7 @@ const ApiDocs = () => {
               <h3 className="text-lg font-semibold text-foreground mb-2">Endpoint</h3>
               <div className="bg-muted p-4 rounded-lg mb-4">
                 <code className="text-sm">
-                  POST https://api.checkai.com/v1/bypass
+                  POST https://api.vuamarketing.com/v1/bypass
                 </code>
               </div>
 
@@ -160,8 +160,8 @@ const ApiDocs = () => {
               </h3>
               <p className="text-muted-foreground">
                 Liên hệ với team technical support của chúng tôi tại{" "}
-                <a href="mailto:api@checkai.com" className="text-primary hover:underline">
-                  api@checkai.com
+                <a href="mailto:api@vuamarketing.com" className="text-primary hover:underline">
+                  api@vuamarketing.com
                 </a>
               </p>
             </Card>

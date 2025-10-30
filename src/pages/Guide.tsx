@@ -11,10 +11,10 @@ const Guide = () => {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Hướng dẫn sử dụng CheckAI
+              Hướng dẫn sử dụng Vua Marketing
             </h1>
             <p className="text-lg text-muted-foreground">
-              Tìm hiểu cách sử dụng CheckAI để kiểm tra và bypass nội dung AI hiệu quả
+              Tìm hiểu cách sử dụng Vua Marketing để kiểm tra và bypass nội dung AI hiệu quả
             </p>
           </div>
 
@@ -36,7 +36,7 @@ const Guide = () => {
                       </h3>
                       <p className="text-muted-foreground">
                         Dán văn bản cần kiểm tra vào ô nhập liệu. Bạn cũng có thể upload file Word hoặc PDF trực tiếp. 
-                        CheckAI hỗ trợ kiểm tra lên đến 5,000 từ mỗi lần (gói miễn phí).
+                        Vua Marketing hỗ trợ kiểm tra lên đến 5,000 từ mỗi lần (gói miễn phí).
                       </p>
                     </div>
                   </div>
@@ -52,7 +52,7 @@ const Guide = () => {
                         Bước 2: Chọn ngôn ngữ
                       </h3>
                       <p className="text-muted-foreground">
-                        Chọn ngôn ngữ của văn bản từ dropdown. CheckAI hỗ trợ tiếng Việt, tiếng Anh, tiếng Trung, 
+                        Chọn ngôn ngữ của văn bản từ dropdown. Vua Marketing hỗ trợ tiếng Việt, tiếng Anh, tiếng Trung, 
                         tiếng Nhật, tiếng Tây Ban Nha và tiếng Pháp.
                       </p>
                     </div>

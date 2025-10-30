@@ -20,7 +20,7 @@ const Privacy = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-bold text-foreground mb-4">1. Cam kết bảo mật</h2>
                 <p className="text-muted-foreground mb-4">
-                  CheckAI cam kết bảo vệ quyền riêng tư của người dùng. Chính sách này giải thích cách chúng tôi 
+                  Vua Marketing cam kết bảo vệ quyền riêng tư của người dùng. Chính sách này giải thích cách chúng tôi 
                   thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn khi sử dụng dịch vụ của chúng tôi.
                 </p>
               </section>
@@ -44,7 +44,7 @@ const Privacy = () => {
                   Thông tin thu thập được sử dụng để:
                 </p>
                 <ul className="list-disc pl-6 text-muted-foreground space-y-2">
-                  <li>Cung cấp và cải thiện dịch vụ CheckAI</li>
+                  <li>Cung cấp và cải thiện dịch vụ Vua Marketing</li>
                   <li>Phân tích xu hướng sử dụng và tối ưu hóa hiệu suất</li>
                   <li>Gửi thông báo về cập nhật và tính năng mới (nếu bạn đăng ký)</li>
                   <li>Bảo vệ chống lại gian lận và lạm dụng dịch vụ</li>
@@ -70,7 +70,7 @@ const Privacy = () => {
                 <ul className="list-disc pl-6 text-muted-foreground space-y-2">
                   <li><strong>Nhà cung cấp dịch vụ:</strong> Để hỗ trợ vận hành dịch vụ (hosting, analytics)</li>
                   <li><strong>Yêu cầu pháp lý:</strong> Khi được yêu cầu bởi cơ quan có thẩm quyền</li>
-                  <li><strong>Bảo vệ quyền lợi:</strong> Để bảo vệ quyền, tài sản hoặc an toàn của CheckAI và người dùng</li>
+                  <li><strong>Bảo vệ quyền lợi:</strong> Để bảo vệ quyền, tài sản hoặc an toàn của Vua Marketing và người dùng</li>
                 </ul>
               </section>
 
@@ -121,7 +121,7 @@ const Privacy = () => {
                 <p className="text-muted-foreground">
                   Nếu bạn có câu hỏi về Chính sách bảo mật hoặc muốn thực hiện quyền của mình, vui lòng liên hệ:
                   <br />
-                  Email: <a href="mailto:privacy@checkai.com" className="text-primary hover:underline">privacy@checkai.com</a>
+                  Email: <a href="mailto:privacy@vuamarketing.com" className="text-primary hover:underline">privacy@vuamarketing.com</a>
                 </p>
               </section>
             </div>

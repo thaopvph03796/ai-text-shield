@@ -22,7 +22,7 @@ export const CTASection = () => {
             </Button>
           </div>
           <p className="text-sm text-muted-foreground mt-6">
-            Hơn 10,000+ người dùng đã tin tưởng CheckAI
+            Hơn 10,000+ người dùng đã tin tưởng Vua Marketing
           </p>
         </div>
       </div>

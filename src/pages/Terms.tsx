@@ -20,7 +20,7 @@ const Terms = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-bold text-foreground mb-4">1. Chấp nhận điều khoản</h2>
                 <p className="text-muted-foreground mb-4">
-                  Bằng cách truy cập và sử dụng CheckAI, bạn đồng ý tuân theo các điều khoản và điều kiện sau đây. 
+                  Bằng cách truy cập và sử dụng Vua Marketing, bạn đồng ý tuân theo các điều khoản và điều kiện sau đây. 
                   Nếu bạn không đồng ý với bất kỳ phần nào của các điều khoản này, vui lòng không sử dụng dịch vụ của chúng tôi.
                 </p>
               </section>
@@ -28,7 +28,7 @@ const Terms = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-bold text-foreground mb-4">2. Sử dụng dịch vụ</h2>
                 <p className="text-muted-foreground mb-4">
-                  CheckAI cung cấp công cụ kiểm tra đạo văn AI và bypass nội dung AI. Bạn đồng ý sử dụng dịch vụ:
+                  Vua Marketing cung cấp công cụ kiểm tra đạo văn AI và bypass nội dung AI. Bạn đồng ý sử dụng dịch vụ:
                 </p>
                 <ul className="list-disc pl-6 text-muted-foreground space-y-2">
                   <li>Chỉ cho mục đích hợp pháp và không vi phạm quyền của bên thứ ba</li>
@@ -41,15 +41,15 @@ const Terms = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-bold text-foreground mb-4">3. Quyền sở hữu trí tuệ</h2>
                 <p className="text-muted-foreground mb-4">
-                  Tất cả nội dung, tính năng và chức năng của CheckAI (bao gồm nhưng không giới hạn ở văn bản, đồ họa, 
-                  logo, mã nguồn) là tài sản của CheckAI và được bảo vệ bởi luật bản quyền quốc tế.
+                  Tất cả nội dung, tính năng và chức năng của Vua Marketing (bao gồm nhưng không giới hạn ở văn bản, đồ họa, 
+                  logo, mã nguồn) là tài sản của Vua Marketing và được bảo vệ bởi luật bản quyền quốc tế.
                 </p>
               </section>
 
               <section className="mb-8">
                 <h2 className="text-2xl font-bold text-foreground mb-4">4. Nội dung người dùng</h2>
                 <p className="text-muted-foreground mb-4">
-                  Bạn giữ quyền sở hữu đối với nội dung mà bạn gửi lên CheckAI. Chúng tôi không lưu trữ, chia sẻ 
+                  Bạn giữ quyền sở hữu đối với nội dung mà bạn gửi lên Vua Marketing. Chúng tôi không lưu trữ, chia sẻ 
                   hoặc sử dụng nội dung của bạn cho bất kỳ mục đích nào ngoài việc cung cấp dịch vụ kiểm tra và bypass.
                 </p>
               </section>
@@ -57,7 +57,7 @@ const Terms = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-bold text-foreground mb-4">5. Miễn trừ trách nhiệm</h2>
                 <p className="text-muted-foreground mb-4">
-                  CheckAI được cung cấp "như hiện tại" mà không có bất kỳ bảo đảm nào. Chúng tôi không đảm bảo 
+                  Vua Marketing được cung cấp "như hiện tại" mà không có bất kỳ bảo đảm nào. Chúng tôi không đảm bảo 
                   tính chính xác 100% của kết quả kiểm tra AI. Người dùng chịu trách nhiệm về việc sử dụng kết quả 
                   từ dịch vụ của chúng tôi.
                 </p>
@@ -66,7 +66,7 @@ const Terms = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-bold text-foreground mb-4">6. Giới hạn trách nhiệm</h2>
                 <p className="text-muted-foreground mb-4">
-                  CheckAI không chịu trách nhiệm cho bất kỳ thiệt hại trực tiếp, gián tiếp, ngẫu nhiên hoặc 
+                  Vua Marketing không chịu trách nhiệm cho bất kỳ thiệt hại trực tiếp, gián tiếp, ngẫu nhiên hoặc 
                   hậu quả phát sinh từ việc sử dụng hoặc không thể sử dụng dịch vụ của chúng tôi.
                 </p>
               </section>
@@ -92,7 +92,7 @@ const Terms = () => {
                 <h2 className="text-2xl font-bold text-foreground mb-4">9. Liên hệ</h2>
                 <p className="text-muted-foreground">
                   Nếu bạn có bất kỳ câu hỏi nào về Điều khoản sử dụng này, vui lòng liên hệ với chúng tôi qua 
-                  email: <a href="mailto:support@checkai.com" className="text-primary hover:underline">support@checkai.com</a>
+                  email: <a href="mailto:support@vuamarketing.com" className="text-primary hover:underline">support@vuamarketing.com</a>
                 </p>
               </section>
             </div>

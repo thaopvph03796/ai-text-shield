@@ -72,7 +72,7 @@ const Pricing = () => {
               Miễn phí mãi mãi
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Bảng giá CheckAI
+              Bảng giá Vua Marketing
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Lựa chọn gói dịch vụ phù hợp với nhu cầu của bạn. Tất cả gói đều bao gồm các tính năng cơ bản.

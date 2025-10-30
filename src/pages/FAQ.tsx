@@ -13,7 +13,7 @@ const FAQ = () => {
               Câu hỏi thường gặp
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Tìm câu trả lời cho các thắc mắc phổ biến về CheckAI
+              Tìm câu trả lời cho các thắc mắc phổ biến về Vua Marketing
             </p>
           </div>
           <FAQSection />

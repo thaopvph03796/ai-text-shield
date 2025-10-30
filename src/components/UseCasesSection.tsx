@@ -34,7 +34,7 @@ export const UseCasesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Ai nên sử dụng CheckAI?
+            Ai nên sử dụng Vua Marketing?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Công cụ kiểm tra AI phù hợp cho mọi người cần xác minh tính nguyên bản của nội dung

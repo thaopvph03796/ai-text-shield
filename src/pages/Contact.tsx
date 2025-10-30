@@ -44,8 +44,8 @@ const Contact = () => {
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">Email</h3>
               <p className="text-muted-foreground text-sm mb-2">Gửi email cho chúng tôi</p>
-              <a href="mailto:support@checkai.com" className="text-primary hover:underline">
-                support@checkai.com
+              <a href="mailto:support@vuamarketing.com" className="text-primary hover:underline">
+                support@vuamarketing.com
               </a>
             </Card>
 
@@ -56,7 +56,7 @@ const Contact = () => {
               <h3 className="text-lg font-semibold text-foreground mb-2">Telegram</h3>
               <p className="text-muted-foreground text-sm mb-2">Tham gia cộng đồng</p>
               <a href="#" className="text-primary hover:underline">
-                @CheckAI_Group
+                @VuaMarketing_Group
               </a>
             </Card>
 

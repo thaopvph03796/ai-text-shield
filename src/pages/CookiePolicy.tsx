@@ -27,7 +27,7 @@ const CookiePolicy = () => {
               </section>
 
               <section className="mb-8">
-                <h2 className="text-2xl font-bold text-foreground mb-4">2. CheckAI sử dụng Cookie như thế nào?</h2>
+                <h2 className="text-2xl font-bold text-foreground mb-4">2. Vua Marketing sử dụng Cookie như thế nào?</h2>
                 <p className="text-muted-foreground mb-4">
                   Chúng tôi sử dụng các loại cookie sau:
                 </p>
@@ -116,7 +116,7 @@ const CookiePolicy = () => {
                 <p className="text-muted-foreground">
                   Nếu bạn có câu hỏi về Chính sách Cookie của chúng tôi, vui lòng liên hệ:
                   <br />
-                  Email: <a href="mailto:privacy@checkai.com" className="text-primary hover:underline">privacy@checkai.com</a>
+                  Email: <a href="mailto:privacy@vuamarketing.com" className="text-primary hover:underline">privacy@vuamarketing.com</a>
                 </p>
               </section>
             </div>
